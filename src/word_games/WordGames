@@ -1,0 +1,46 @@
+package word_games;
+import java.util.Scanner;
+
+public class WordGamesTester {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Ask for a word
+        System.out.println("Enter a word: ");
+        String userWord = input.nextLine();
+
+        //create a WordGames instance to play with userWord
+        WordGames newGames = new WordGames(userWord);
+
+        // Scramble it
+        String scrambled = newGames.scramble();
+
+        // Print out scrambled word
+        System.out.println(scrambled);
+
+        // Ask for an index
+        System.out.println("Enter an index: ");
+        int index = input.nextInt();
+        // Ask for random word
+        System.out.println("Enter a word: ");
+        input.nextLine();  // skip over the newline
+        System.out.println("Enter another word: ");
+        String word = input.nextLine();
+
+        // Add random word at index
+        String newWord = game.bananaSplit(index, newWord);
+        // Print out the word
+        System.out.println(game.bananaSplit(newWord);
+
+
+        // Ask for a character (store as a String)
+        System.out.println("Enter a character: ");
+        String userChar = input.nextLine();
+        // Ask for random word
+        System.out.println("Enter another word: ");
+        String word2 = input.nextLine();
+        // Print out the word
+        System.out.println(wordgame.bananaSplit(userChar, word2));
+
+    }
+}
